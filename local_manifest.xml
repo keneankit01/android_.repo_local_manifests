@@ -2,15 +2,16 @@
 <manifest>
 
 	<remote  name="ankitkene"
-		fetch="https://github.com/keneankit01" />
+		fetch="https://github.com/Ankits-lab/" />
  
-	<remote  name="los"
-		fetch="https://github.com/LineageOS/" />
- 
- 	<project path="device/nokia/Pl2" name="android_device_nokia_PL2" remote="los" revision="lineage-18.1"/>
-       <project path="device/nokia/DRG" name="android_device_nokia_DRG" remote="ankitkene" revision="lineage-18.1"/>
-        <project path="device/nokia/sdm660-common" name="android_device_nokia_sdm660-common" remote="los" revision="lineage-18.1"/>
-	<project path="kernel/nokia/sdm660" name="android_kernel_nokia_sdm660" remote="los" revision="lineage-18.1" />
-	<project path="vendor/nokia" name="vendor-bringup" remote="ankitkene" revision="DRG-bringup-R"/>
+	<remote  name="adarsh"
+		fetch="https://github.com/AdarshGrewal/" />
+	
+	<remote  name="static"
+		fetch="https://github.com/TheStaticDesign//" />
+
+       <project path="device/xiaomi/sweet" name="android_device_xiaomi_sweet" remote="ankitkene" revision="lineage-18.1"/>
+	<project path="kernel/xiaomi/sweet" name="android_kernel_xiaomi_sweet" remote="static" revision="11" />
+	<project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet " remote="adarsh" revision="lineage-18.1"/>
 
 </manifest>
