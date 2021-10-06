@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	 <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+
 	 <remote name="github"
          fetch="https://github.com" />
 	<remote  name="ankitkene"
@@ -11,36 +11,15 @@
 	<project path="vendor/nokia" name="proprietary_vendor_nokia" remote="ankitkene" revision="lineage-18.1"/>
 
 	
- <project path="hardware/qcom-caf/common" name="CesiumOS-org/hardware_qcom-caf_common" remote="github" revision="eleven" >
-    <!-- add guard for AOSP hardware/qcom dir -->
-    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
-    <!-- add guards for CAF repositories -->
-    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
-  </project>
- <project path="hardware/qcom-caf/msm8998/audio" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="lineage-18.1-caf-msm8998" />
- <project path="hardware/qcom-caf/msm8998/display" name="LineageOS/android_hardware_qcom_display" remote="github" revision="lineage-18.1-caf-msm8998" />
- <project path="hardware/qcom-caf/msm8998/media" name="LineageOS/android_hardware_qcom_media" remote="github" revision="lineage-18.1-caf-msm8998" />
-
- <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="caf" revision="a8e5a9714857c17a657c426735c4470c07ec4e1d" upstream="refs/heads/data.lnx.6.0.r12-rel">
-   <linkfile dest="vendor/qcom/defs/product-defs/legacy/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
- </project>
- <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" remote="caf" revision="0fb7abe717fab15465cc508e1952991147d96316" upstream="refs/heads/data.lnx.6.0.r12-rel"/>
- <remove-project name="platform/packages/apps/Bluetooth" />
- <project path="packages/apps/Bluetooth" name="CesiumOS-org/packages_apps_Bluetooth" remote="github" revision="eleven" />
-
- <project name="platform/packages/apps/Mms" path="vendor/codeaurora/commonsys/packages/apps/Mms" revision="cf5f3dea590f532704a31c75c5efda95e359a865" upstream="refs/heads/android_ui-sys.lnx.5.0.r8-rel">
-   <linkfile dest="vendor/qcom/defs/product-defs/legacy/app_mms_product.mk" src="app_mms_system_product.mk"/>
- </project>
- <project name="platform/packages/apps/SnapdragonGallery" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonGallery" revision="66e311ebf99a2af6d9b9f4acfb680a88ee3cc0af" upstream="refs/heads/android-snapdragonGallery.lnx.3.0.r7-rel"/>
- <project name="platform/packages/apps/SnapdragonMusic" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic" revision="9b13fc9ddc2b877f48ead04634d85ec2bf23648c" upstream="refs/heads/android_ui-sys.lnx.5.0.r8-rel">
-   <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapMusic_product.mk" src="app_snapMusic_system_product.mk"/>
- </project>
- <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="75eed452346a1a21fb4ba3e6cc9ad0c0719d371d" upstream="refs/heads/atel-sys.lnx.1.0.r13-rel"/>
- <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" revision="447db31852b9eb84f68bb416374742ff56dc96d5" upstream="refs/heads/android_ui-sys.lnx.5.0.r8-rel">
-   <linkfile dest="vendor/qcom/defs/product-defs/system/app_qtiSoundRecorder_product.mk" src="app_qtiSoundRecorder_system_product.mk"/>
- </project>
- <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="16b1ace952bfb8fd0cfb731101729639d23f9962" upstream="refs/heads/atel-sys.lnx.1.0.r13-rel"/>
-
+	 <project path="hardware/qcom-caf/common" name="CesiumOS-org/hardware_qcom-caf_common" remote="github" revision="eleven" >
+	    <!-- add guard for AOSP hardware/qcom dir -->
+	    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+	    <!-- add guards for CAF repositories -->
+	    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+	    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+	  </project>
+	 <project path="hardware/qcom-caf/msm8998/audio" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="lineage-18.1-caf-msm8998" />
+	 <project path="hardware/qcom-caf/msm8998/display" name="LineageOS/android_hardware_qcom_display" remote="github" revision="lineage-18.1-caf-msm8998" />
+	 <project path="hardware/qcom-caf/msm8998/media" name="LineageOS/android_hardware_qcom_media" remote="github" revision="lineage-18.1-caf-msm8998" />
 
 </manifest>
