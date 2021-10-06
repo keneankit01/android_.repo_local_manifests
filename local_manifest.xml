@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+	 <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+	 <remote name="github"
+         fetch="https://github.com" />
 	<remote  name="ankitkene"
 		fetch="https://github.com/dump-by-ak" />
 	
         <project path="device/nokia/DRG" name="android_device_nokia_DRG" remote="ankitkene" revision="aosp-11-trail"/>
         <project path="device/nokia/sdm660-common" name="android_device_nokia_sdm660-common" remote="ankitkene" revision="aosp-11-trail"/>
 	<project path="vendor/nokia" name="proprietary_vendor_nokia" remote="ankitkene" revision="lineage-18.1"/>
-	 <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
-	 <remote name="github"
-         fetch="https://github.com" />
+
 	
  <project path="hardware/qcom-caf/common" name="CesiumOS-org/hardware_qcom-caf_common" remote="github" revision="eleven" >
     <!-- add guard for AOSP hardware/qcom dir -->
