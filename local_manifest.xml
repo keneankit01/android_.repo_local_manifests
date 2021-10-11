@@ -10,16 +10,5 @@
         <project path="device/nokia/sdm660-common" name="android_device_nokia_sdm660-common" remote="ankitkene" revision="aosp-11-trail"/>
 	<project path="vendor/nokia" name="proprietary_vendor_nokia" remote="ankitkene" revision="lineage-18.1"/>
 	<project path="kernel/nokia/sdm660" name="android_kernel_nokia_sdm660" remote="ankitkene" revision="Wipe" />
-	
-	 <project path="hardware/qcom-caf/common" name="CesiumOS-org/hardware_qcom-caf_common" remote="github" revision="eleven" >
-	    <!-- add guard for AOSP hardware/qcom dir -->
-	    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
-	    <!-- add guards for CAF repositories -->
-	    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
-	    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
-	  </project>
-	 <project path="hardware/qcom-caf/msm8998/audio" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="lineage-18.1-caf-msm8998" />
-	 <project path="hardware/qcom-caf/msm8998/display" name="LineageOS/android_hardware_qcom_display" remote="github" revision="lineage-18.1-caf-msm8998" />
-	 <project path="hardware/qcom-caf/msm8998/media" name="LineageOS/android_hardware_qcom_media" remote="github" revision="lineage-18.1-caf-msm8998" />
 
 </manifest>
