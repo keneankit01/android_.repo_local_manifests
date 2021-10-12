@@ -5,10 +5,11 @@
          fetch="https://github.com" />
 	<remote  name="ankitkene"
 		fetch="https://github.com/dump-by-ak" />
-	
+	<remote  name="ankitkene1"
+		fetch="https://github.com/keneankit01" />
         <project path="device/nokia/DRG" name="android_device_nokia_DRG" remote="ankitkene" revision="aosp-11-trail"/>
         <project path="device/nokia/sdm660-common" name="android_device_nokia_sdm660-common" remote="ankitkene" revision="aosp-11-trail"/>
 	<project path="vendor/nokia" name="proprietary_vendor_nokia" remote="ankitkene" revision="lineage-18.1"/>
-	<project path="kernel/nokia/sdm660" name="android_kernel_nokia_sdm660" remote="ankitkene" revision="Wipe" />
+	<project path="kernel/nokia/sdm660" name="android_kernel_nokia_sdm660" remote="ankitkene1" revision="Wipe2" />
 
 </manifest>
