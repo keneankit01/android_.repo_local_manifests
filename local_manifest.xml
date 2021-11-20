@@ -8,7 +8,7 @@
 		fetch="https://github.com/LineageOS/" />
 
 	<remote  name="ancient"
-		fetch="https://github.com/LineageOS/" />
+		fetch="https://github.com/ancient-devices/" />
  
  	<project path="device/nokia/PL2" name="android_device_nokia_PL2" remote="ankitkene" revision="lineage-19.0"/>
        <project path="device/nokia/DRG" name="android_device_nokia_DRG" remote="ankitkene" revision="lineage-19.0"/>
