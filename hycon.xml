@@ -10,9 +10,8 @@
 	<remote  name="ancient"
 		fetch="https://github.com/ancient-devices/" />
  
- 	<project path="device/nokia/PL2" name="android_device_nokia_PL2" remote="ankitkene" revision="lineage-19.0"/>
-       <project path="device/nokia/DRG" name="android_device_nokia_DRG" remote="ankitkene" revision="lineage-19.0"/>
-        <project path="device/nokia/sdm660-common" name="android_device_nokia_sdm660-common" remote="ankitkene" revision="lineage-19.0"/>
+ 	<project path="device/nokia/PL2" name="android_device_nokia_PL2" remote="ankitkene" revision="hycon"/>
+        <project path="device/nokia/sdm660-common" name="android_device_nokia_sdm660-common" remote="ankitkene" revision="hycon"/>
 	<project path="kernel/nokia/sdm660" name="kernel_nokia_sdm660" remote="ancient" revision="twelve" />
 	<project path="vendor/nokia" name="vendor_nokia_sdm660" remote="ancient" revision="twelve"/>
 	<!-- <project path="hardware/samsung/nfc" name="android_hardware_samsung_nfc" remote="los" revision="lineage-18.1" /> -->
